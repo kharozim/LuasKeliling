@@ -42,14 +42,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //                Intent pindah2 = new Intent(MainActivity.this, com.example.ozimos.luaskeliling.kel_lingkaran.class);
 //                startActivity(pindah2);
 //                break;
-//            case R.id.btn_luas_segitiga:
-//                Intent pindah3 = new Intent(MainActivity.this, com.example.ozimos.luaskeliling.luas_segitiga.class);
-//                startActivity(pindah3);
-//                break;
-//            case R.id.btn_luas_persegipanjang:
-//                Intent pindah4 = new Intent(MainActivity.this, com.example.ozimos.luaskeliling.luas_persegipanjang.class);
-//                startActivity(pindah4);
-//                break;
+            case R.id.btn_luas_segitiga:
+                Intent pindah3 = new Intent(MainActivity.this, com.example.ozimos.luaskeliling.luas_segitiga.class);
+                startActivity(pindah3);
+                break;
+            case R.id.btn_luas_persegipanjang:
+                Intent pindah4 = new Intent(MainActivity.this, com.example.ozimos.luaskeliling.luas_persegipanjang.class);
+                startActivity(pindah4);
+                break;
             case R.id.btn_luas_trapesium:
                 Intent pindah5 = new Intent(MainActivity.this, com.example.ozimos.luaskeliling.luas_trapesium.class);
                 startActivity(pindah5);

@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".luas_trapesium" />
         <activity android:name=".luas_lingkaran" />
-        <activity android:name=".luas_segitiga"></activity>
+        <activity android:name=".luas_segitiga" />
+        <activity android:name=".luas_persegipanjang"></activity>
     </application>
 
 </manifest>
