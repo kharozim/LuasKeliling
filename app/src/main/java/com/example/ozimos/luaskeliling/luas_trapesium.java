@@ -25,6 +25,11 @@ public class luas_trapesium extends AppCompatActivity implements View.OnClickLis
         tvhasil = (TextView) findViewById(R.id.hasil);
 
         btHitung.setOnClickListener(this);
+
+        if (savedInstanceState !=null) {
+            String hasil = savedInstanceState.getString(STATE_HASIL);
+            tvhasil.setText(hasil);
+        }
     }
 
     @Override
@@ -38,5 +43,12 @@ public class luas_trapesium extends AppCompatActivity implements View.OnClickLis
                 edtTinggi.setError("Tinggi tidak boleh kosong");
             }
         }
+    }
+
+    private static final String STATE_HASIL = "state_hasil";
+    @Override
+    protected void onSaveInstanceState(Bundle outstate){
+        outstate.putString(STATE_HASIL, tvhasil.getText().toString());
+        super.onSaveInstanceState(outstate);
     }
 }

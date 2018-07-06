@@ -46,9 +46,7 @@ public class luas_segitiga extends AppCompatActivity implements View.OnClickList
                 double luas = 0.5 * A * T;
                 tvhasil.setText(String.valueOf(luas));
             }
-
         }
-
     }
     private static final String STATE_HASIL = "state_hasil";
     @Override
