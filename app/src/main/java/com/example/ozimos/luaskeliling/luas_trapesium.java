@@ -35,12 +35,21 @@ public class luas_trapesium extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick (View v){
         if (v.getId() == R.id.btn_hitung){
+            String p1 = edtRuas1.getText().toString();
+            String p2 = edtRuas2.getText().toString();
+            String t = edtTinggi.getText().toString();
             if (edtRuas1.length() == 0) {
                 edtRuas1.setError("Panjang Ruas1 tidak boleh kosong");
             } else if (edtRuas2.length() == 0) {
                 edtRuas2.setError("Panjang Ruas2 tidak boleh kosong");
             }else if (edtTinggi.length() == 0) {
                 edtTinggi.setError("Tinggi tidak boleh kosong");
+            }else {
+                double P1 = Double.parseDouble(p1);
+                double P2 = Double.parseDouble(p2);
+                double T = Double.parseDouble(t);
+                double luas = (P1+P2) * T / 2;
+                tvhasil.setText(String.valueOf(luas));
             }
         }
     }
