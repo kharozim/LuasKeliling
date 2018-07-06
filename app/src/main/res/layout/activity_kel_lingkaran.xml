@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/horizontal_margin"
     android:paddingRight="@dimen/horizontal_margin"
     android:paddingTop="@dimen/vertical_margin"
-    tools:context=".luas_lingkaran">
+    tools:context=".kel_lingkaran">
 
     <TextView
         android:layout_width="match_parent"
@@ -23,10 +23,10 @@
         android:inputType="numberDecimal" />
 
     <Button
-        android:id="@+id/btn_kel_lingkaran"
+        android:id="@+id/btn_hitung"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="luas_lingkaran" />
+        android:text="keliiling lingkaran" />
 
     <TextView
         android:id="@+id/tx_hasil"

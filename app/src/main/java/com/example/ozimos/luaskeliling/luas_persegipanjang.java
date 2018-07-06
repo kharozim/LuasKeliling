@@ -8,11 +8,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class luas_persegipanjang extends AppCompatActivity  implements View.OnClickListener{
+public class luas_persegipanjang extends AppCompatActivity implements View.OnClickListener {
 
-    EditText edtPanjang, edtLebar;
-    Button btHitung;
-    TextView tvhasil;
+    private EditText edtPanjang, edtLebar;
+    private Button btHitung;
+    private TextView tvhasil;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,28 +24,25 @@ public class luas_persegipanjang extends AppCompatActivity  implements View.OnCl
         btHitung = (Button) findViewById(R.id.btn_hitung);
         tvhasil = (TextView) findViewById(R.id.hasil);
 
-
         btHitung.setOnClickListener(this);
 
-        if (savedInstanceState !=null) {
+        if (savedInstanceState != null) {
             String hasil = savedInstanceState.getString(STATE_HASIL);
             tvhasil.setText(hasil);
         }
     }
 
     @Override
-    private void onClick (View v){
-        if (v.getId() == R.id.btn_hitung){
+    public void onClick(View v) {
+        if (v.getId() == R.id.btn_hitung) {
             String p = edtPanjang.getText().toString().trim();
             String l = edtLebar.getText().toString().trim();
 
-            if (p.length()==0){
+            if (p.length() == 0) {
                 edtPanjang.setError("Panjang tidak boleh kosong");
-            }
-            else if (l.length()==0){
+            } else if (l.length() == 0) {
                 edtLebar.setError("Lebar tidak boleh kosong");
-            }
-            else {
+            } else {
                 double P = Double.parseDouble(p);
                 double L = Double.parseDouble(l);
                 double luas = P * L;
@@ -53,9 +50,11 @@ public class luas_persegipanjang extends AppCompatActivity  implements View.OnCl
             }
         }
     }
+
     private static final String STATE_HASIL = "state_hasil";
+
     @Override
-    protected void onSaveInstanceState(Bundle outstate){
+    protected void onSaveInstanceState(Bundle outstate) {
         outstate.putString(STATE_HASIL, tvhasil.getText().toString());
         super.onSaveInstanceState(outstate);
     }
