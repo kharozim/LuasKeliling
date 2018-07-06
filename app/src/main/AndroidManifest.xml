@@ -20,7 +20,8 @@
         <activity android:name=".luas_lingkaran" />
         <activity android:name=".luas_segitiga" />
         <activity android:name=".luas_persegipanjang" />
-        <activity android:name=".kel_lingkaran"></activity>
+        <activity android:name=".kel_lingkaran" />
+        <activity android:name=".kel_trapesium"></activity>
     </application>
 
 </manifest>

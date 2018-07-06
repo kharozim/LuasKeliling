@@ -23,7 +23,7 @@
         android:inputType="numberDecimal" />
 
     <Button
-        android:id="@+id/btn_kel_lingkaran"
+        android:id="@+id/btn_hitung"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="luas_lingkaran" />

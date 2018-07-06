@@ -54,10 +54,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent pindah5 = new Intent(MainActivity.this, com.example.ozimos.luaskeliling.luas_trapesium.class);
                 startActivity(pindah5);
                 break;
-//            case R.id.btn_kel_trapesium:
-//                Intent pindah6 = new Intent(MainActivity.this, com.example.ozimos.luaskeliling.kel_trapesium.class);
-//                startActivity(pindah6);
-//                break;
+            case R.id.btn_kel_trapesium:
+                Intent pindah6 = new Intent(MainActivity.this, com.example.ozimos.luaskeliling.kel_trapesium.class);
+                startActivity(pindah6);
+                break;
         }
     }
 }

@@ -19,7 +19,7 @@ public class luas_lingkaran extends AppCompatActivity {
         setContentView(R.layout.activity_luas_lingkaran);
 
         jari2 = (EditText) findViewById(R.id.jari_jari);
-        btn_hasil = (Button) findViewById(R.id.btn_luas_lingkaran);
+        btn_hasil = (Button) findViewById(R.id.btn_hitung);
         teks_hasil = (TextView) findViewById(R.id.tx_hasil);
 
         btn_hasil.setOnClickListener(new View.OnClickListener() {
