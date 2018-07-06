@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/vertical_margin"
+    android:paddingLeft="@dimen/horizontal_margin"
+    android:paddingRight="@dimen/horizontal_margin"
+    android:paddingTop="@dimen/vertical_margin"
+    tools:context=".luas_lingkaran">
+
+    <EditText
+        android:id="@+id/jari_jari"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_luas_lingkaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="luas_lingkaran" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tx_hasil"
+        android:text="HASIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
