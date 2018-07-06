@@ -20,7 +20,7 @@ public class kel_lingkaran extends AppCompatActivity implements View.OnClickList
 
         jari2 = (EditText) findViewById(R.id.jari_jari);
         btn_hasil = (Button) findViewById(R.id.btn_hitung);
-        tvhasil = (TextView) findViewById(R.id.tx_hasil);
+        tvhasil = (TextView) findViewById(R.id.hasil);
 
         btn_hasil.setOnClickListener(this);
 

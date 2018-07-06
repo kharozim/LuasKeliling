@@ -38,10 +38,13 @@
         android:text="luas_lingkaran" />
 
     <TextView
-        android:id="@+id/tx_hasil"
+        android:id="@+id/hasil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical_margin"
         android:gravity="center"
-        android:text="HASIL" />
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="HASIL"/>
 
 </LinearLayout>
